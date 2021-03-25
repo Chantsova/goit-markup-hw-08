@@ -153,9 +153,23 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
 
@@ -165,7 +179,15 @@ button {
   }
 }
 
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   color: #212121;
   min-height: 40px;
   min-width: 40px;
@@ -191,6 +213,12 @@ button {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 .menu__icon {
   fill: currentColor;
 }
@@ -213,10 +241,6 @@ button {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.menu__tel:hover, .menu__tel:focus {
   color: #2196f3;
 }
 
@@ -228,11 +252,49 @@ button {
   color: #757575;
 }
 
-.menu__email:hover, .menu__email:focus {
-  color: #2196f3;
+.mobile__closeIcon {
+  fill: currentColor;
+}
+
+.mobile__menu {
+  margin-bottom: 302px;
+}
+
+.mobile__menu li:not(:first-child) {
+  margin-top: 32px;
+}
+
+.mobile__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile__contacts li:not(:first-child) {
+  margin-top: 32px;
+}
+
+.mobile__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.mobile__social li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.mobile__social li:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: -10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .mobile-social__link {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -379,6 +441,12 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .logo__footer {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -850,10 +918,15 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .menu-projects__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .menu-projects__item:not(:first-child) {
@@ -861,6 +934,7 @@ button {
 }
 
 .menu-projects__btn {
+  display: inline-block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1071,11 +1145,19 @@ button {
 
 .checkbox__label {
   position: relative;
-  padding-left: 36px;
-  font-size: 14px;
-  line-height: 1.714;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.714;
+    padding-left: 36px;
+  }
 }
 
 .checkbox__input {
@@ -1083,10 +1165,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.checkbox__input:focus + .checkbox__item {
-  outline: 1px solid #2196f3;
 }
 
 .checkbox__input + .checkbox__item {
@@ -1104,10 +1182,17 @@ button {
 
 .checkbox__item {
   position: absolute;
-  top: 5px;
-  left: 13px;
+  top: 0;
+  left: 0;
   width: 16px;
   height: 15px;
+}
+
+@media (min-width: 1200px) {
+  .checkbox__item {
+    top: 5px;
+    left: 13px;
+  }
 }
 
 .checkbox__link {
@@ -1240,6 +1325,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .form__label {
@@ -1269,7 +1355,6 @@ button {
 
 .form__input {
   padding-left: 42px;
-  width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
@@ -1283,6 +1368,12 @@ button {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #2196f3;
+}
+
+@media (min-width: 480px) {
+  .form__input {
+    width: 100%;
+  }
 }
 
 .form__icon {
@@ -1449,8 +1540,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  padding: 40px;
+  height: 609px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1471,6 +1562,19 @@ button {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__closeIcon {
@@ -1497,11 +1601,18 @@ button {
 .modal__title {
   margin-bottom: 12px;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .staff {
@@ -1519,13 +1630,13 @@ button {
 
 @media (min-width: 768px) {
   .staff__card {
-    max-width: 354px;
+    width: 354px;
   }
 }
 
 @media (min-width: 1200px) {
   .staff__card {
-    max-width: 270px;
+    width: 270px;
     padding-bottom: 30px;
   }
 }

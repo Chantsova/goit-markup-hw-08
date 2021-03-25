@@ -2,9 +2,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
-    width: 528px;
-    height: 581px;
+    padding: 40px;
+    height: 609px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,6 +12,15 @@
     background-color: $elementWhite;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal__closeIcon {
@@ -41,9 +49,14 @@
 .modal__title {
     margin-bottom: 12px;
     font-weight: bold;
-    font-size: $modalFontSize;
-    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: $textDarkGrey;
+    font-size: 20px;
+    line-height: 30px;
+
+    @media (min-width: 1200px) {
+        font-size: $modalFontSize;
+        line-height: 1.15;
+    }
 }
