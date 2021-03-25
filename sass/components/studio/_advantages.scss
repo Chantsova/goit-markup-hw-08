@@ -1,5 +1,9 @@
 .advantages {
     margin: $centerMargin;
+
+    @media (min-width: 1200px) {
+        padding-bottom: 0;
+    }
 }
 
 .advantages__thumb {

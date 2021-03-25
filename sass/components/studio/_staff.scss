@@ -15,6 +15,7 @@
     }
 
     @media (min-width: 1200px) {
+        max-width: 270px;
         padding-bottom: 30px;
     }
 }
@@ -49,23 +50,28 @@
 }
 
 .staff__list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 0;
-    margin-left: -1 * 30px;
-    margin-top: -1 * 30px;
+    @media (max-width: 1199px) {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-left: -1 * 30px;
+        margin-top: -1 * 30px;
 
-    & > .staff__card {
-        flex-basis: calc(100% / 3 - 30px);
-        margin-left: $cardSetGap;
-        margin-top: $cardSetGap;
+        & > .staff__card {
+            flex-basis: calc(100% / 3 - 30px);
+            margin-left: $cardSetGap;
+            margin-top: $cardSetGap;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 0;
     }
 }
-
-// & .staff__card:not(:first-child) {
-//     @media (min-width: 768px) {
-//         margin-top: $beetweenItemsMargin30;
-//     }

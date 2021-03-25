@@ -1,14 +1,16 @@
-// .page-header {
-//     border-bottom: 1px solid $headerBorderGrey;
-// }
+.page-header {
+    border-bottom: 1px solid $headerBorderGrey;
+}
 
-// .page-header__container {
-//     display: flex;
-//     justify-content: space-between;
-// }
+.page-header__container {
+    display: flex;
+    justify-content: space-between;
+}
 
-// .page-header__nav {
-//     @extend %flex-center;
-//     // display: flex;
-//     // align-items: center;
-// }
+.page-header__nav {
+    @extend %flex-center;
+    padding: 16px 0;
+
+    // display: flex;
+    // align-items: center;
+}
