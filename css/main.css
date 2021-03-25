@@ -934,7 +934,7 @@ button {
 }
 
 .menu-projects__btn {
-  display: inline-block;
+  display: inline;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1712,6 +1712,28 @@ button {
             justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 0;
+  }
+}
+
+.staff__img {
+  max-width: 450px;
+}
+
+@media (min-width: 480px) {
+  .staff__img {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .staff__img {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .staff__img {
+    width: 270px;
   }
 }
 

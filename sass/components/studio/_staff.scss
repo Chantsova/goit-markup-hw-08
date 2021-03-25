@@ -75,3 +75,17 @@
         margin-bottom: 0;
     }
 }
+
+.staff__img {
+    max-width: 450px;
+
+    @media (min-width: 480px) {
+        width: 450px;
+    }
+    @media (min-width: 768px) {
+        width: 354px;
+    }
+    @media (min-width: 1200px) {
+        width: 270px;
+    }
+}
