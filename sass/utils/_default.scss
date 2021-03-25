@@ -1,0 +1,111 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 15px;
+    margin: $centerMargin;
+
+    @media (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (min-width: 1200px) {
+        padding-top: $sectionsPadding;
+        padding-bottom: $sectionsPadding;
+    }
+
+    &__title {
+        margin: 0 auto 30px;
+        color: $textDarkGrey;
+        font-size: 28px;
+        line-height: 1.178;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        @media (min-width: 1200px) {
+            margin: $centerMargin;
+            font-size: $sectionsTitleFontSize;
+            line-height: 1.172;
+        }
+    }
+}
+
+.button {
+    @extend %flex-center;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0;
+    background-color: $accentColor;
+    box-shadow: $btnShadows;
+    border: none;
+    border-radius: $elementsBorderRadius;
+    font-weight: bold;
+    font-size: $middleFontSize;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    color: $textWhite;
+
+    &--footer {
+        @extend .button;
+        margin: 0 0 0 10px;
+        cursor: auto;
+    }
+}

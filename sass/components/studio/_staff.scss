@@ -1,0 +1,71 @@
+.staff {
+    background-color: $backgroundGrey;
+}
+
+.staff__card {
+    background-color: $elementWhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 24px;
+    max-width: 450px;
+
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
+}
+
+.staff__title {
+    margin: 30px auto 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $textDarkGrey;
+
+    @media (min-width: 1200px) {
+        font-size: $middleFontSize;
+        line-height: 1.172;
+    }
+}
+
+.staff__text {
+    margin: 10px auto 0;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $textGrey;
+
+    @media (min-width: 1200px) {
+        font-size: $middleFontSize;
+        line-height: 1.172;
+    }
+}
+
+.staff__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: -1 * 30px;
+    margin-top: -1 * 30px;
+
+    & > .staff__card {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: $cardSetGap;
+        margin-top: $cardSetGap;
+    }
+}
+
+// & .staff__card:not(:first-child) {
+//     @media (min-width: 768px) {
+//         margin-top: $beetweenItemsMargin30;
+//     }

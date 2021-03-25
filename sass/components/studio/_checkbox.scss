@@ -1,0 +1,55 @@
+// .checkbox {
+//     display: flex;
+//     align-items: baseline;
+//     margin-top: 20px;
+// }
+
+//     .checkbox__label {
+//         position: relative;
+//         padding-left: 36px;
+//         font-size: $standartFontSize;
+//         line-height: 1.714;
+//         letter-spacing: 0.03em;
+//         color: $textGrey;
+//     }
+
+//     .checkbox__input {
+//         position: absolute;
+//         -webkit-appearance: none;
+//         -moz-appearance: none;
+//         appearance: none;
+    
+//     &:focus + .checkbox__item {
+//         outline: 1px solid $accentColor;
+//     }
+
+//     & + .checkbox__item {
+//         fill: none;
+//         border: 2px solid $textDarkGrey;
+//         border-radius: $checkboxBorderRadius;
+//     }
+
+//     &:checked + .checkbox__item {
+//         fill: $elementWhite;
+//         background-color: $accentColor;
+//         border: none;
+//         border-radius: $checkboxBorderRadius;
+//     }
+// }
+
+//     .checkbox__item {
+//         @extend %flex-center;
+//         position: absolute;
+//         top: 5px;
+//         left: 13px;
+//         width: 16px;
+//         height: 15px;
+//     }
+
+//     .checkbox__link {
+//         display: inline-block;
+//         line-height: 0.85; /* Отрегулировала самостоятельно для вида, согласно макету*/
+//         border-bottom: 1px solid currentColor;
+//         color: $accentColor;
+//     }
+

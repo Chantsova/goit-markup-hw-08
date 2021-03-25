@@ -1,0 +1,95 @@
+.advantages {
+    margin: $centerMargin;
+}
+
+.advantages__thumb {
+    @extend %flex-center;
+    height: 120px;
+    border-radius: $elementsBorderRadius;
+    background-color: $backgroundGrey;
+
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
+}
+
+.advantages__icon {
+    display: inline-flex;
+}
+
+.advantages__title {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $textDarkGrey;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: $standartFontSize;
+        line-height: 1.172;
+    }
+}
+
+.advantages__text {
+    margin-top: $beetweenItemsMargin10;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $textGrey;
+
+    @media (min-width: 1200px) {
+        font-size: $standartFontSize;
+        line-height: 1.714;
+    }
+}
+
+.advantages__list {
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin: $centerMargin;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1 * 30px;
+        margin-top: -1 * 30px;
+
+        & > .advantages__item {
+            flex-basis: calc(100% / 2 - 30px);
+            margin-left: $cardSetGap;
+            margin-top: $cardSetGap;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: $centerMargin;
+    }
+}
+
+.advantages__item {
+    max-width: 450px;
+
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 270px;
+    }
+
+    &:not(:first-child) {
+        @media (min-width: 1200px) {
+            margin-left: $beetweenItemsMargin30;
+        }
+    }
+}

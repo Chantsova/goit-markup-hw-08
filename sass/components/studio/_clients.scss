@@ -1,0 +1,54 @@
+.clients__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -1 * 30px;
+    margin-top: -1 * 30px;
+
+    @media (min-width: 1200px) {
+        margin: 50px 0 0;
+        padding: 0 0 94px;
+
+        & li:not(:first-child) {
+            margin-left: $beetweenItemsMargin30;
+        }
+    }
+
+    & > li {
+        @media (max-width: 1199px) {
+            flex-basis: calc(100% / 3 - 30px);
+            margin-left: $cardSetGap;
+            margin-top: $cardSetGap;
+        }
+    }
+}
+
+.clients__link {
+    @extend %flex-center;
+    width: 210px;
+    height: 90px;
+    border: 1px solid $iconGrey;
+    box-sizing: border-box;
+    border-radius: $elementsBorderRadius;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $iconGrey;
+
+    @media (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 170px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        border-color: $accentColor;
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+}
