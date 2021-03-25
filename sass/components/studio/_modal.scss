@@ -1,46 +1,49 @@
-// .modal {
-//     @extend %flex-center;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     width: 528px;
-//     height: 581px;
-//     flex-direction: column;
-//     background-color: $elementWhite;
-//     transform: translate(-50%, -50%) scale(1);
-//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-//     .modal__closeIcon {
-//         fill: currentColor;
-//     }
+    width: 528px;
+    height: 581px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-//    .modal__closeButton {
-//         @extend %flex-center;
-//         position: absolute;
-//         top: 8px;
-//         right: 8px;
-//         fill: $elementBlack;
-//         width: 30px;
-//         height: 30px;
-//         border: 1px solid $closeButtonBorder;
-//         border-radius: 50%;
-//         background-color: $elementWhite;
-//         cursor: pointer;
-        
-//                 &:hover,
-//     &:focus {
-//         color: $accentColor;
-//     }
-//     }
+    background-color: $elementWhite;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-//     .modal__title {
-//         margin-bottom: 12px;
-//         font-weight: bold;
-//         font-size: $modalFontSize;
-//         line-height: 1.15;
-//         text-align: center;
-//         letter-spacing: 0.03em;
-//         color: $textDarkGrey;
-//     }
+.modal__closeIcon {
+    fill: currentColor;
+}
 
+.modal__closeButton {
+    @extend %flex-center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    fill: $elementBlack;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $closeButtonBorder;
+    border-radius: 50%;
+    background-color: $elementWhite;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.modal__title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: $modalFontSize;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $textDarkGrey;
+}

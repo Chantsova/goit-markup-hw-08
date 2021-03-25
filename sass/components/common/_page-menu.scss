@@ -1,14 +1,18 @@
 .page-menu {
     display: none;
 
+    @media (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
+
     @media (min-width: 1200px) {
         display: flex;
-        align-items: center;
         margin-left: 93px; /*between logo and menu*/
+    }
 
-        & li:not(:first-child) {
-            margin-left: $beetweenItemsMargin50; /*between menu-items*/
-        }
+    & li:not(:first-child) {
+        margin-left: $beetweenItemsMargin50; /*between menu-items*/
     }
 }
 
@@ -34,7 +38,7 @@
         border-radius: 2px;
         background-color: $accentColor;
         opacity: 0;
-        transform: translateY(1px);
+        // transform: translateY(1px);
     }
 
     .page-menu &.current {

@@ -5,8 +5,15 @@
     line-height: 1.167;
     letter-spacing: 0.03em;
     color: $accentColor;
+    padding: 16px 0;
+
+    @media (min-width: 768px) {
+        padding: 26px 0;
+    }
 
     @media (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
         font-size: $logoFontSize;
         line-height: 1.174;
     }
