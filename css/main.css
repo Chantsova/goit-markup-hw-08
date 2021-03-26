@@ -1559,15 +1559,15 @@ button {
 
 @media (min-width: 577px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/Tablet/hero768@1x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Tablet/hero768@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("goit-markup-hw-08/images/Tablet/hero768@1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("goit-markup-hw-08/images/Tablet/hero768@1x.jpg");
   }
 }
 
 @media (min-width: 577px) and (min-device-pixel-ratio: 2), (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 577px) and (min-resolution: 192dpi), (min-width: 577px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/Tablet/hero768@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Tablet/hero768@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("goit-markup-hw-08/images/Tablet/hero768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("goit-markup-hw-08/images/Tablet/hero768@2x.jpg");
   }
 }
 
