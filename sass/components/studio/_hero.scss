@@ -38,7 +38,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url('/images/Tablet/Hero-768@1x.jpg');
+            url('/images/Tablet/hero-768@1x.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -50,7 +50,7 @@
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)
                 ),
-                url('/images/Tablet/Hero-768@2x.jpg');
+                url('/images/Tablet/hero-768@2x.jpg');
         }
     }
 }
@@ -62,7 +62,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url('/images/Desktop/HeroDesc@1x.jpg');
+            url('/images/Desktop/hero-1200@1x.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -74,7 +74,7 @@
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)
                 ),
-                url('/images/Desktop/HeroDesc@2x.jpg');
+                url('/images/Desktop/hero-1200@2x.jpg');
         }
     }
 }
