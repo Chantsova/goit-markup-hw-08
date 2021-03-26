@@ -48,6 +48,7 @@ button {
 .container {
     padding: 0 15px;
     margin: $centerMargin;
+    min-width: 320px;
 
     @media (min-width: 480px) {
         width: 480px;
@@ -80,7 +81,7 @@ button {
         letter-spacing: 0.03em;
 
         @media (min-width: 1200px) {
-            margin: $centerMargin;
+            margin: 0 auto;
             font-size: $sectionsTitleFontSize;
             line-height: 1.172;
         }
