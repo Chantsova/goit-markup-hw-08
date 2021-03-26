@@ -8,9 +8,10 @@
 /*Font-Sizes*/
 /*Border-radius*/
 /*Shadows*/
+/*Fonts*/
 body {
   background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -137,7 +138,7 @@ button {
   }
 }
 
-.button, .button--footer, .social-media__list > li, .social-media__link, .advantages__thumb, .checkbox__item, .clients__link, .features__text, .modal__closeButton, .staffs-social, .staffs-social__link {
+.button, .button--footer, .page-header__nav, .social-media__list > li, .social-media__link, .advantages__thumb, .checkbox__item, .clients__link, .features__text, .modal__closeButton, .staffs-social, .staffs-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +228,7 @@ button {
 .menu__item {
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.175;
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
@@ -240,7 +241,7 @@ button {
 .menu__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.176;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -248,7 +249,7 @@ button {
 .menu__email {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.167;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -298,7 +299,7 @@ button {
   position: relative;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -405,7 +406,7 @@ button {
 
 .logo {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
   line-height: 1.167;
   letter-spacing: 0.03em;
@@ -561,18 +562,6 @@ button {
   .page-header__container {
     height: 80px;
   }
-}
-
-.page-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .page-menu {
@@ -1096,7 +1085,7 @@ button {
   margin-top: 30px;
   margin-bottom: 0px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.143;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1120,7 +1109,7 @@ button {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.715;
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
@@ -1228,7 +1217,7 @@ button {
   position: relative;
   padding-left: 24px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1686,7 +1675,7 @@ button {
   letter-spacing: 0.03em;
   color: #212121;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
 }
 
 @media (min-width: 1200px) {
@@ -1718,7 +1707,7 @@ button {
   margin: 30px auto 0;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1734,7 +1723,7 @@ button {
 .staff__text {
   margin: 10px auto 0;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;

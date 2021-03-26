@@ -56,8 +56,8 @@
 
 .menu__item {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: $mobileMenuFontSize;
+    line-height: 1.175;
     text-align: center;
     letter-spacing: 0.02em;
     color: $textDarkGrey;
@@ -74,16 +74,16 @@
 
 .menu__tel {
     font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
+    font-size: $mobileContactsTel;
+    line-height: 1.176;
     letter-spacing: 0.02em;
     color: $accentColor;
 }
 
 .menu__email {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: $mobileContactsEmail;
+    line-height: 1.167;
     letter-spacing: 0.02em;
     color: $textGrey;
 }
@@ -128,8 +128,8 @@
 .mobile-social__link {
     position: relative;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: $subtitleFontSize;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accentColor;
 }

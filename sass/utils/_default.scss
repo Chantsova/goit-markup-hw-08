@@ -1,6 +1,6 @@
 body {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
+    background-color: $elementWhite;
+    font-family: $basicfont;
 }
 
 img {
@@ -64,8 +64,8 @@ button {
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: $sectionSmallPadding;
+    padding-bottom: $sectionSmallPadding;
 
     @media (min-width: 1200px) {
         padding-top: $sectionsPadding;
@@ -75,7 +75,7 @@ button {
     &__title {
         margin: 0 auto 30px;
         color: $textDarkGrey;
-        font-size: 28px;
+        font-size: $sectionSmallTitle;
         line-height: 1.178;
         text-align: center;
         letter-spacing: 0.03em;

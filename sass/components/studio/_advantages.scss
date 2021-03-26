@@ -24,8 +24,8 @@
 .advantages__title {
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $standartFontSize;
+    line-height: 1.143;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -44,8 +44,8 @@
 .advantages__text {
     margin-top: $beetweenItemsMargin10;
     margin-bottom: 0;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: $standartFontSize;
+    line-height: 1.715;
     letter-spacing: 0.03em;
     text-align: left;
     color: $textGrey;

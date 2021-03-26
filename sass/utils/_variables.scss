@@ -17,7 +17,7 @@ $textDarkGrey: rgba(33, 33, 33, 1);
 $iconGrey: rgba(175, 177, 184, 1);
 $textGrey05: rgba(117, 117, 117, 0.5);
 $textGrey: rgba(117, 117, 117, 1);
-$textWhite03:rgba(255, 255, 255, 0.3);
+$textWhite03: rgba(255, 255, 255, 0.3);
 $textWhite06: rgba(255, 255, 255, 0.6);
 $textWhite: rgba(255, 255, 255, 1);
 
@@ -25,6 +25,7 @@ $textWhite: rgba(255, 255, 255, 1);
 $cardSetGap: 30px;
 
 /*Paddings*/
+$sectionSmallPadding: 60px;
 $sectionsPadding: 94px;
 
 /*Margins*/
@@ -46,8 +47,14 @@ $standartFontSize: 14px;
 $middleFontSize: 16px;
 $subtitleFontSize: 18px;
 $modalFontSize: 20px;
-$logoFontSize: 26px;
+$mobileContactsEmail: 24px;
+$logoSmallFontSize: 24px;
+$heroSmallTitle: 26px;
+$logoBigFontSize: 26px;
+$sectionSmallTitle: 28px;
+$mobileContactsTel: 34px;
 $sectionsTitleFontSize: 36px;
+$mobileMenuFontSize: 40px;
 $mainTitleFontSize: 44px;
 
 /*Border-radius*/
@@ -56,3 +63,7 @@ $checkboxBorderRadius: 2px;
 
 /*Shadows*/
 $btnShadows: 0px 4px 4px $btnShadow;
+
+/*Fonts*/
+$logofont: 'Raleway', sans-serif;
+$basicfont: 'Roboto', sans-serif;

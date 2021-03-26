@@ -23,7 +23,7 @@
     left: 0;
 
     &:focus-within {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill $transitionCommon;
         fill: $accentColor;
     }
 }
@@ -39,7 +39,7 @@
     outline: none;
 
     &:focus {
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color $transitionCommon;
         border-color: $accentColor;
     }
 
@@ -72,7 +72,7 @@
     outline: none;
 
     &:focus {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color $transitionCommon;
         border-color: $accentColor;
         color: $elementBlack;
     }

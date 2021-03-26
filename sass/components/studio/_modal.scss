@@ -52,8 +52,8 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $textDarkGrey;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: $modalFontSize;
+    line-height: 1.5;
 
     @media (min-width: 1200px) {
         font-size: $modalFontSize;

@@ -1,5 +1,5 @@
 .menu-projects__content {
-    padding-top: 60px;
+    padding-top: $sectionSmallPadding;
     @media (min-width: 1200px) {
         padding-top: $sectionsPadding;
     }
@@ -33,7 +33,7 @@
 
 .menu-projects__btn {
     display: inline-block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow $transitionCommon;
     padding: 6px 22px;
     background-color: $backgroundGrey;
     font-weight: 500;

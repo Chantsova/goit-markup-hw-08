@@ -5,8 +5,8 @@
 .page-footer__container {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: $sectionSmallPadding;
+    padding-bottom: $sectionSmallPadding;
 
     @media (min-width: 1200px) {
         flex-direction: row;

@@ -20,8 +20,8 @@
 .staff__title {
     margin: 30px auto 0;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: $middleFontSize;
+    line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
     color: $textDarkGrey;
@@ -34,8 +34,8 @@
 
 .staff__text {
     margin: 10px auto 0;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: $middleFontSize;
+    line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
     color: $textGrey;

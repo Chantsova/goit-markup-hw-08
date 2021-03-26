@@ -1,7 +1,7 @@
 .logo {
     display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-family: $logofont;
+    font-size: $logoSmallFontSize;
     line-height: 1.167;
     letter-spacing: 0.03em;
     color: $accentColor;
@@ -14,7 +14,7 @@
     @media (min-width: 1200px) {
         padding-top: 24px;
         padding-bottom: 25px;
-        font-size: $logoFontSize;
+        font-size: $logoBigFontSize;
         line-height: 1.174;
     }
 
