@@ -77,15 +77,21 @@
 }
 
 .staff__thumb {
-    height: 460px;
+    max-width: 450px;
+    max-height: 460px;
     position: relative;
-    overflow: hidden;
+    @media (min-width: 480px) {
+        height: 460px;
+        width: 450px;
+    }
 
     @media (min-width: 768px) {
         height: 374px;
+        width: 354px;
     }
     @media (min-width: 1200px) {
         height: 260px;
+        width: 270px;
     }
 }
 

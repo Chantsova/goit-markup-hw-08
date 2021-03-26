@@ -77,6 +77,10 @@
     height: 294px;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 480px) {
+        max-width: 450px;
+    }
 }
 
 .card-set__img {
