@@ -4,14 +4,12 @@
     @media (min-width: 768px) {
         display: flex;
         flex-direction: column;
-        margin-left: 84px;
         padding-top: 21px;
         padding-bottom: 21px;
     }
     @media (min-width: 1200px) {
         display: flex;
         flex-direction: row;
-        margin-left: 305px;
         color: $textGrey;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -34,6 +32,7 @@
 
 .contacts-list__link {
     display: flex;
+    align-items: center;
     transition: color $transitionCommon;
     font-weight: 500;
     font-size: $standartFontSize;
@@ -60,5 +59,27 @@
     &:hover,
     &:focus {
         fill: $accentColor;
+    }
+}
+
+.envelope {
+    @media (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+    }
+    @media (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.smartphone {
+    @media (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+    }
+    @media (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
     }
 }
